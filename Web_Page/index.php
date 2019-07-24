@@ -1,56 +1,59 @@
-                                         
-
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Datasec4Iot</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.c$
+<body>
 
-    <title>Datasec4iot</title
->
-  </head>
-  <body>
+<div class="container">
 
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="internet-of-things.png" width="30" height="30" class="d-inline$
-        Download
-      </a>
-    </nav>
+	<div class="page-header">
+		<h1>Datasec4Iot</h1>
+	</div>
+</div>
 
-        <?php
-        // This will return all files in that folder
-        $files = scandir("data");
-        // First 2 indexes are "." and ".."
-        for ($a = 2; $a < count($files); $a++)
-        {
+<>
+
+ <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">File</th>
+        </tr>
+        </thead>
+        <tbody>
+            <?php
+            // This will return all files in that folder
+            $files = scandir("data");
+            // First 2 indexes are "." and ".."
+            for ($a = 2; $a < count($files); $a++)
+            {
             ?>
             <p>
                 <!-- Displaying file name !-->
-                <?php echo $files[$a]; ?>
-
-                <!-- href should be complete file path !-->
-                <!-- download attribute should be the name after it downloads !-->
-                <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">
-                    Download
-                </a>
+                <tr>
+                	<th scope="row"><?php echo $a-2 ?></th>
+                	<td><?php echo $files[$a]; ?></td>
+			<td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">
+                    Download</a></td> 
+                </tr>
             </p>
             <?php
-        }
+            }
+            ?>   
+        </tbody>
+     </table>
 
-        ?> 
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENz$
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="s$
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-$
-
 </html>
