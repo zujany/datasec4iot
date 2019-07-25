@@ -30,8 +30,12 @@
 	overflow: scroll;
 }
 
+#content{
+	overflow: hidden;
+}
+
 /*Filter and list*/
-#content_column{
+/*#content_column{
     margin-top: 70px;
     position: static;
 }
@@ -39,3 +43,4 @@
 #title_column{
 	position: fixed;
 }
+*/
