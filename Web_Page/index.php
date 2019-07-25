@@ -47,7 +47,6 @@
                 <p>
                     <!-- Displaying file name !-->
                     <tr>
-                    	<th scope="row"><?php echo $a-2 ?></th>
                     	<td><?php echo $files[$a]; ?></td>
                         <td> 
                             <div class="form-check">
@@ -65,6 +64,10 @@
         </table>
     </div>
 </div>
+<div class="row">
+    <button type="button" id="download_raw_files" class="btn btn-primary">Download</button>
+</div>
+
 </div>
 
 
