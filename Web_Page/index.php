@@ -8,6 +8,7 @@
 <title>Datasec4Iot</title>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,15 +26,17 @@
         </button> -->
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item active">
-            <a class="nav-link" href="#">Download <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-            </li>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Download <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
         </div>
     </nav>
 
