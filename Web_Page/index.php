@@ -16,7 +16,7 @@
 <!-- Page Header -->
 <div class="container" id="myHeader">
 
-	<div class="page-header">
+	<div class="header">
 		<h1>Datasec4Iot</h1>
 	</div>
     <!-- Navbar -->
