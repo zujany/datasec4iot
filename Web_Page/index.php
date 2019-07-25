@@ -59,21 +59,33 @@
                     </p>
                     <?php
                     }
-                    ?>   
+                    ?> 
+                    <p>   
+                        <tr>
+                            <td>Select All</td>
+                             <td> 
+                                <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                </div>
+                            </td>
+                            <td><button type="button" id="download_raw_files" class="btn btn-primary">Download</button></td>
+                        </tr>
+                    </p>
                 </tbody>
             </table>
         </div>
     </div>
-</div>
 
 
-<div class="container">
-    <div class="row">
+
+
+  <!--   <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
             <button type="button" id="download_raw_files" class="btn btn-primary">Download</button>
         </div>
-    </div>
+    </div> -->
+
 </div>
 
 
