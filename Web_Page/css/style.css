@@ -21,5 +21,14 @@
 
 .container {
     width: 98em;
+    margin: 0 auto;
 
+}
+
+#filter{
+	position: fixed;
+}
+
+#list{
+	position: fixed;
 }
