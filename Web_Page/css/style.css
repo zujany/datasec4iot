@@ -24,23 +24,11 @@
 
 }
 
-#page_content{
-	padding-top: 8px;
-	padding-bottom: 8px;
-	overflow: scroll;
-}
-
-/*Filter and list*/
-#content_column{
-    margin-top: 70px;
-    position: static;
-}
-
 /*To enable scroll bar withou including the header*/
 #content
 {
     position:absolute;
-    top: 50px;
+    top: 56px;
     left:0px;
     right:0px;
     bottom:0px;
