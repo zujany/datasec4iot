@@ -1,11 +1,5 @@
 
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, navbar {
-    display: block;
-}
-
 /*Navbar*/
 
 .navbar {
@@ -35,14 +29,8 @@ footer, header, hgroup, menu, nav, section, navbar {
 	padding-bottom: 8px;
 }
 
-/*#filter{
-	position: fixed;
+/*Filter and list*/
+#content_column{
+    margin-top: 70px;
+    position: relative;
 }
-
-#list{
-	position: fixed;
-}
-
-.row{
-	position: relative;
-}*/
