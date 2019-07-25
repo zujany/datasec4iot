@@ -32,11 +32,16 @@
     left:0px;
     right:0px;
     bottom:0px;
-    overflow-y:auto;        
+    overflow-y:hidden;        
 }​
 
 #table_content{
 	overflow-y:scroll;
+	position:relative;
+    top: 56px;
+    left:0px;
+    right:0px;
+    bottom:0px;
 }
 
 #table_header{
