@@ -14,88 +14,84 @@
 
 <body>
 <!-- Page Header -->
-<!-- <div class="container" id="myHeader"> -->
- <div class="row">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Datasec4Iot</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Download <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-        
-</div>
-
-<!-- Page content: List -->
-<div class="row">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-    
-        <!-- Filters -->
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
-            <h4 id="filter">Filters</h4>
-        </div>
-        <!--  List -->
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" >
-            <table class="table table-striped">
-                <thead id="list">
-                <tr>
-                  <th scope="col">File</th>
-                  <th scope="col"></th>
-                </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    // This will return all files in that folder
-                    $files = scandir("data");
-                    // First 2 indexes are "." and ".."
-                    for ($a = 2; $a < count($files); $a++)
-                    {
-                    ?>
-                    <p>
-                        <!-- Displaying file name !-->
-                        <tr>
-                        	<td><?php echo $files[$a]; ?></td>
-                            <td> 
-                                <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                </div>
-                            </td>
-
-        			         <!-- <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> --> 
-                        </tr>
-                    </p>
-                    <?php
-                    }
-                    ?> 
-                    <p>   
-                        <tr>
-                            <td><button type="button" id="download_raw_files" class="btn btn-primary">Download</button></td>
-                             <td> 
-                                <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                <label class="form-check-label" for="inlineCheckbox1">Select All</label>
-                                </div>
-                            </td>
-                            
-                        </tr>
-                    </p>
-                </tbody>
-            </table>
+        <a class="navbar-brand" href="#">Datasec4Iot</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Download <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
         </div>
     </div>
+</nav>
+        
+
+<!-- Page content: List -->
+
+<div class="container">
+
+    <!-- Filters -->
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
+        <h4 id="filter">Filters</h4>
+    </div>
+    <!--  List -->
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" >
+        <table class="table table-striped">
+            <thead id="list">
+            <tr>
+              <th scope="col">File</th>
+              <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+                <?php
+                // This will return all files in that folder
+                $files = scandir("data");
+                // First 2 indexes are "." and ".."
+                for ($a = 2; $a < count($files); $a++)
+                {
+                ?>
+                <p>
+                    <!-- Displaying file name !-->
+                    <tr>
+                    	<td><?php echo $files[$a]; ?></td>
+                        <td> 
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            </div>
+                        </td>
+
+    			         <!-- <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> --> 
+                    </tr>
+                </p>
+                <?php
+                }
+                ?> 
+                <p>   
+                    <tr>
+                        <td><button type="button" id="download_raw_files" class="btn btn-primary">Download</button></td>
+                         <td> 
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="inlineCheckbox1">Select All</label>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                </p>
+            </tbody>
+        </table>
+    </div>
 </div>
+
 
 
 
