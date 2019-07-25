@@ -32,5 +32,9 @@
 /*Filter and list*/
 #content_column{
     margin-top: 70px;
-    position: relative;
+    position: static;
+}
+
+#title_column{
+	position: fixed;
 }

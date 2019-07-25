@@ -43,12 +43,12 @@
 
     <!-- Filters -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="content_column" >
-        <h4 id="filter">Filters</h4>
+        <h4 id="title_column">Filters</h4>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" id="content_column" >
         <table class="table table-striped">
-            <thead id="list">
+            <thead id="title_column">
             <tr>
               <th scope="col">File</th>
               <th scope="col"></th>
