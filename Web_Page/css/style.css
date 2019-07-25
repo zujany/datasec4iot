@@ -41,14 +41,8 @@
 
 #table_content{
 	overflow-y:scroll;
-	position:absolute;
-
-    top: 300px;
-    left:0px;
-    right:0px;
-    bottom:0px;
 }
 
 #filters_title{
-	padding-top: 10px;
+	padding-top: 30px;
 }
