@@ -43,13 +43,13 @@
     <div class="container">
     
         <!-- Filters -->
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="filters">
-            <h4>Filters</h4>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
+            <h4 id="filter">Filters</h4>
         </div>
         <!--  List -->
-        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" id="list">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" >
             <table class="table table-striped">
-                <thead>
+                <thead id="list">
                 <tr>
                   <th scope="col">File</th>
                   <th scope="col"></th>
