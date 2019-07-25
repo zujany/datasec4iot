@@ -16,7 +16,7 @@
 <!-- Page Header -->
 <div class="container">
 
-	<div class="page-header">
+	<div class="page-header" id="myHeader">
 		<h1>Datasec4Iot</h1>
 	</div>
     <!-- Navbar -->
@@ -117,5 +117,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 </body>
+    <script type="text/javascript" src="functions.js"></script>
 </html>
