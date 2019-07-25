@@ -15,8 +15,7 @@
 <body>
 <!-- Page Header -->
 <!-- <div class="container" id="myHeader"> -->
-<div class="header">
-    <div class="container">
+ <div class="row">
      	<!-- <div class="page-header">
     		<h1>Datasec4Iot</h1>
     	</div> -->
@@ -41,8 +40,6 @@
                 </ul>
             </div>
         </nav>
-        
-    </div>
 </div>
 
 <!-- Page content: List -->
