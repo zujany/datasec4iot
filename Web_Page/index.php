@@ -62,14 +62,14 @@
                     ?> 
                     <p>   
                         <tr>
-                            <td></td>
+                            <td><button type="button" id="download_raw_files" class="btn btn-primary">Download</button></td>
                              <td> 
                                 <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="inlineCheckbox1">Select All</label>
                                 </div>
                             </td>
-                            <td><button type="button" id="download_raw_files" class="btn btn-primary">Download</button></td>
+                            
                         </tr>
                     </p>
                 </tbody>
