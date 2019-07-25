@@ -43,15 +43,8 @@
 
     <!-- Filters -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                  <th scope="col">Filters</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <h4></h4>
+        <h4>Filters</h4>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
