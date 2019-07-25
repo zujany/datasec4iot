@@ -35,15 +35,15 @@
     overflow-y:auto;        
 }​
 
+#table_header{
+	position: fixed;
+}
+
 #table_content{
 	overflow-y:scroll;
 	position:absolute;
-    top: 200px;
+    /*top: 200px;
     left:0px;
     right:0px;
-    bottom:0px;
-}
-
-#table_header{
-	position: fixed;
+    bottom:0px;*/
 }
