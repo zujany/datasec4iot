@@ -21,7 +21,7 @@
 
 <!-- Page content: List -->
 <div class="container">
-<div class="row-lg-10 col-md-10 col-sm-12 col-xs-12">
+<div class="row">
     <!-- Filters -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
         <h4>Enero</h4>
@@ -64,8 +64,11 @@
         </table>
     </div>
 </div>
-<div class="row-lg-2 col-md-2 col-sm-12 col-xs-12">
-    <button type="button" id="download_raw_files" class="btn btn-primary">Download</button>
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <button type="button" id="download_raw_files" class="btn btn-primary">Download</button>
+    </div>
 </div>
 
 </div>
