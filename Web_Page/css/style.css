@@ -38,3 +38,7 @@
 #table_content{
 	overflow-y:scroll;
 }
+
+#table_header{
+	position: fixed;
+}

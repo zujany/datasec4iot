@@ -56,7 +56,7 @@
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <table class="table table-striped">
-            <thead>
+            <thead id="table_header">
             <tr>
               <th scope="col">File</th>
               <th scope="col"></th>
