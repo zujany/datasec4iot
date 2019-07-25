@@ -22,18 +22,18 @@
 <!-- Page content: List -->
 <div class="container">
 <div class="row">
-    <!-- Month Columns -->
+    <!-- Filters -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
         <h4>Enero</h4>
         <h4>Febrero</h4>
     </div>
-    <!-- Month Columns -->
+    <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <table class="table table-striped">
             <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">File</th>
+              <th scope="col"></th>
             </tr>
             </thead>
             <tbody>
@@ -49,8 +49,13 @@
                     <tr>
                     	<th scope="row"><?php echo $a-2 ?></th>
                     	<td><?php echo $files[$a]; ?></td>
-    			<td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">
-                        Download</a></td> 
+                        <td> 
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            </div>
+                        </td>
+
+    			         <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> 
                     </tr>
                 </p>
                 <?php
