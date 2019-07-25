@@ -9,12 +9,14 @@
 /*Navbar*/
 .navbar {
     background-color: #1f5cb7;
+    margin-bottom: 30px;
 }
 
-a {
-    color: #ffffff;
-    margin-right: 40px;
+.bg-light {
+	/*Navbar's background color*/
+    background-color: #398be4!important; 
 }
+
 
 /**/
 
