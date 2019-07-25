@@ -27,6 +27,7 @@
 #page_content{
 	padding-top: 8px;
 	padding-bottom: 8px;
+	overflow: scroll;
 }
 
 /*Filter and list*/
