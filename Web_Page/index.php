@@ -37,7 +37,7 @@
 <!-- Page content: List -->
 
 
-<div class="container" >
+<div class="container" id="content">
 
 <div class="row">
 
@@ -47,10 +47,9 @@
             <thead>
                 <tr>
                   <th scope="col">Filters</th>
-                  <th scope="col"></th>
                 </tr>
             </thead>
-            <tbody id="content">
+            <tbody>
             </tbody>
         </table>
     </div>
@@ -63,7 +62,7 @@
               <th scope="col"></th>
             </tr>
             </thead>
-            <tbody id="content">
+            <tbody id="table_content">
                 <?php
                 // This will return all files in that folder
                 $files = scandir("data");
