@@ -43,8 +43,12 @@
 	overflow-y:scroll;
 	position:absolute;
 
-    top: 2000px;
+    top: 300px;
     left:0px;
     right:0px;
     bottom:0px;
+}
+
+#filters_title{
+	padding-top: 10px;
 }
