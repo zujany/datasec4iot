@@ -82,6 +82,7 @@
                 <p>   
                     <tr>
                         <td><button type="button" id="download_raw_files" class="btn btn-primary">Download</button></td>
+                        <div id="download_feedback"></div>
                          <td> 
                             <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -100,22 +101,11 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
 
+<!--   -->
+<script src="js/bootstrap.min.js"></script>
 </body>
-    <script type="text/javascript" src="functions.js"></script>
 </html>
 
-<?php
-
-if (isset($_POST["download_raw_files"]))
-
-    echo 'You press the download button';
-
-    // if(!empty($_POST["selected_files"])){
-        
-    // }
-    
-
-?>
