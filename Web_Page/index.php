@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<?php include 'functions.php';?>
 <!-- Page Header -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -51,7 +52,7 @@
             <thead id="table_header">
             <tr>
               <th scope="col">File</th>
-              <th scope="col"></th>
+              <th scope="col">Download</th>
             </tr>
             </thead>
             <tbody id="table_content">
@@ -68,11 +69,11 @@
                     	<td><?php echo $files[$a]; ?></td>
                         <td> 
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
                             </div>
                         </td>
 
-    			         <!-- <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> --> 
+    			         <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> 
                     </tr>
                 </p>
                 <?php
@@ -105,3 +106,16 @@
 </body>
     <script type="text/javascript" src="functions.js"></script>
 </html>
+
+<?php
+
+if (isset($_POST["download_raw_files"]))
+
+    echo 'You press the download button';
+
+    // if(!empty($_POST["selected_files"])){
+        
+    // }
+    
+
+?>
