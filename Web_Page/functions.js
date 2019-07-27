@@ -11,7 +11,15 @@
 
 function download_all_selected(){
 	// console.log('Download all')
-	console.log($('.form-check-input'))
+	console.log('todos')
+	console.log($('.checkbox-files'))
+	var check_box = $('.checkbox-files');
+	console.log('query de prueba')
+	console.log(check_box.attr(checked));
+	console.log('Separacion')
+	for (var i = 0; i < check_box.length; i++){
+		if (check_box[i].attr(checked)) console.log(check_box[i]);
+	}
 }
 
 

@@ -70,7 +70,7 @@
                     	<td><?php echo $files[$a]; ?></td>
                         <td> 
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
+                            <input class="form-check-input checkbox-files" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
                             </div>
                         </td>
 
