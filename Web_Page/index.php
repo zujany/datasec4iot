@@ -74,7 +74,7 @@
                             </div>
                         </td>
 
-    			       <!--   <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a></td>  -->
+    			         <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a> 
                     </tr>
                 </p>
                 <?php
@@ -82,8 +82,8 @@
                 ?> 
                 <p>   
                     <tr>
-                        <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button></td>
-                        <div id="download_feedback"></div>
+                        <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
+                        </td>
                          <td> 
                             <div class="form-check">
                             <input class="form-check-input" id= "select_all" type="checkbox" onclick="select_all()">
