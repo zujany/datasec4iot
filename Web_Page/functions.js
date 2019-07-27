@@ -10,7 +10,8 @@
 
 
 function download_all_selected(){
-	console.log('Download all')
+	// console.log('Download all')
+	console.log($('.form-check-input'))
 }
 
 
