@@ -40,7 +40,6 @@
 
 
 <div class="container" id="content">
-
 <div class="row">
 
     <!-- Filters -->
