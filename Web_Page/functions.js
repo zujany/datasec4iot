@@ -8,7 +8,6 @@ function download_all_selected(){
 
 	for (var i = 0; i < check_box.length; i++){
 		if (check_box[i].checked) {
-			console.log(check_box[i])
 			check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
 		}
 	}
@@ -19,7 +18,6 @@ function download_all_selected(){
 function select_all(){
 	var check_box = $('.checkbox-files');
 	var select_all_checkbox = $('#select_all');
-	console.log(check_box)
 
 	if (select_all_checkbox[0].checked) {
 		for (var i = 0; i < check_box.length; i++){
