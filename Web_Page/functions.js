@@ -18,7 +18,8 @@ function download_all_selected(){
 	// console.log(check_box.attr(checked));
 	console.log('Separacion')
 	for (var i = 0; i < check_box.length; i++){
-		if (check_box[i].is(checked)) console.log(check_box[i]);
+		console.log(check_box[i].checked)
+		// if (check_box[i].is(checked)) console.log(check_box[i]);
 	}
 }
 
