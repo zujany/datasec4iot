@@ -74,7 +74,7 @@
                             </div>
                         </td>
 
-    			         <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> 
+    			        <!--  <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td>  -->
                     </tr>
                 </p>
                 <?php
@@ -82,12 +82,12 @@
                 ?> 
                 <p>   
                     <tr>
-                        <td><button type="button" id="download_raw_files" class="btn btn-primary" onclick="download_all_selected()">Download</button></td>
+                        <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button></td>
                         <div id="download_feedback"></div>
                          <td> 
                             <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="inlineCheckbox1">Select All</label>
+                            <label class="form-check-label" for="inlineCheckbox1" onclick="select_all()">Select All</label>
                             </div>
                         </td>
                         

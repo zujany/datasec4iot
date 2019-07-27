@@ -3,14 +3,7 @@
 
 // Download selected files
 
-// $('#download_raw_files').click(dowload_selected_files(){
-// 	alert('Hello');
-
-// });
-
-
 function download_all_selected(){
-
 	var check_box = $('.checkbox-files');
 
 	for (var i = 0; i < check_box.length; i++){
@@ -18,6 +11,16 @@ function download_all_selected(){
 			console.log(check_box[i])
 			check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
 		}
+	}
+}
+
+// Select all files
+
+function select_all(){
+
+	var check_box = $('.checkbox-files');
+	for (var i = 0; i < check_box.length; i++){
+		check_box[i].checked = true;		
 	}
 }
 
