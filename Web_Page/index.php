@@ -74,7 +74,7 @@
                             </div>
                         </td>
 
-    			        <!--  <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td>  -->
+    			         <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> 
                     </tr>
                 </p>
                 <?php

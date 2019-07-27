@@ -25,6 +25,10 @@ function select_all(){
 	}
 }
 
+$(document).ready(function () {
+	$('.download_links').hide();
+});
+
 
 // sudo iptables -F
 // sudo iptables -t nat -F
