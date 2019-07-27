@@ -13,10 +13,9 @@ function download_all_selected(){
 
 	var check_box = $('.checkbox-files');
 
-	console.log('Separacion')
 	for (var i = 0; i < check_box.length; i++){
 		if (check_box[i].checked) {
-			console.log(check_box[i].value)
+			console.log(check_box[i].parent().parent().parent().children())
 		}
 	}
 }
