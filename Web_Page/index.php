@@ -81,7 +81,7 @@
                 ?> 
                 <p>   
                     <tr>
-                        <td><button type="button" id="download_raw_files" class="btn btn-primary">Download</button></td>
+                        <td><button type="button" id="download_raw_files" class="btn btn-primary" onclick="download_all_selected()">Download</button></td>
                         <div id="download_feedback"></div>
                          <td> 
                             <div class="form-check">
