@@ -17,15 +17,18 @@ function download_all_selected(){
 // Select all files
 
 function select_all(){
-	var check_box = $('#select_all');
-	if (check_box[0].checked) {
+	var check_box = $('.checkbox-files');
+	var select_all_checkbox = $('#select_all');
+	console.log(check_box)
+
+	if (select_all_checkbox[0].checked) {
 		for (var i = 0; i < check_box.length; i++){
 			check_box[i].checked = true;		
 		}
 	}
 	else{
 		for (var i = 0; i < check_box.length; i++){
-			check_box[0].checked = false;
+			check_box[i].checked = false;
 		}
 	} 
 
