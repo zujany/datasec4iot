@@ -54,6 +54,7 @@
             <tr>
               <th scope="col">File</th>
               <th scope="col">Download</th>
+              <th></th>
             </tr>
             </thead>
             <tbody id="table_content">
@@ -82,7 +83,6 @@
                 ?> 
                 <p>   
                     <tr>
-                        <td><></td>
                         <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
                         </td>
                          <td> 
