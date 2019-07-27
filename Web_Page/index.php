@@ -86,7 +86,7 @@
                         <div id="download_feedback"></div>
                          <td> 
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" onclick="select_all()">
+                            <input class="form-check-input" id= "select_all" type="checkbox" onclick="select_all()">
                             <label class="form-check-label" for="inlineCheckbox1" ">Select All</label>
                             </div>
                         </td>
