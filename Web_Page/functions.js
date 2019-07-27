@@ -15,7 +15,8 @@ function download_all_selected(){
 
 	for (var i = 0; i < check_box.length; i++){
 		if (check_box[i].checked) {
-			console.log(check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click())
+			console.log(check_box[i])
+			check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
 		}
 	}
 }
