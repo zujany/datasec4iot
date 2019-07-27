@@ -19,12 +19,11 @@
 /**/
 
 .container {
-    width: 98em;
     margin: 0 auto;
-
+    max-width: 100%;
 }
 
-/*To enable scroll bar withou including the header*/
+/*To enable scroll bar without including the header*/
 #content
 {
     position:absolute;
@@ -35,12 +34,15 @@
     overflow-y:auto;        
 }​
 
-#table_header{
-	position: fixed;
+
+/*Table*/
+.table {
+    max-width: 75%;
 }
 
-#table_content{
-	/*overflow-y:scroll;*/
+
+#table_header{
+	position: fixed;
 }
 
 #filters_title{
