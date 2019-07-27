@@ -17,6 +17,7 @@ function download_all_selected(){
 // Select all files
 
 function select_all(){
+	console.log("select_all")
 
 	var check_box = $('.checkbox-files');
 	for (var i = 0; i < check_box.length; i++){
