@@ -103,10 +103,10 @@
 
 
 <script type="text/javascript" src="functions.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
+<!-- <script type="text/javascript" src="jquery.js"></script> -->
 
 <!--   -->
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
 </html>
 
