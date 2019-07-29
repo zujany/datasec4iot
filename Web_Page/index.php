@@ -8,6 +8,7 @@
 <title>Datasec4Iot</title>
 <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -39,7 +40,6 @@
 
 
 <div class="container" id="content">
-
 <div class="row">
 
     <!-- Filters -->
@@ -53,6 +53,7 @@
             <tr>
               <th scope="col">File</th>
               <th scope="col">Download</th>
+              <th></th>
             </tr>
             </thead>
             <tbody id="table_content">
@@ -69,11 +70,11 @@
                     	<td><?php echo $files[$a]; ?></td>
                         <td> 
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
+                            <input class="form-check-input checkbox-files" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
                             </div>
                         </td>
 
-    			         <td> <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">Download</a></td> 
+    			         <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a></td> 
                     </tr>
                 </p>
                 <?php
@@ -81,12 +82,12 @@
                 ?> 
                 <p>   
                     <tr>
-                        <td><button type="button" id="download_raw_files" class="btn btn-primary" onclick="download_all_selected()">Download</button></td>
-                        <div id="download_feedback"></div>
+                        <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
+                        </td>
                          <td> 
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="inlineCheckbox1">Select All</label>
+                            <input class="form-check-input" id= "select_all" type="checkbox" onclick="select_all()">
+                            <label class="form-check-label" for="inlineCheckbox1" ">Select All</label>
                             </div>
                         </td>
                         
@@ -102,10 +103,10 @@
 
 
 <script type="text/javascript" src="functions.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
+<!-- <script type="text/javascript" src="jquery.js"></script> -->
 
 <!--   -->
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
 </html>
 
