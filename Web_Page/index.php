@@ -86,10 +86,21 @@
                     <tr>
                     	<td>
                         <?php
-                            for ($i = 8; $a < 17; $i++){
+                            for ($i = 8; $i < 12; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 12; $i < 14; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 14; $i < 16; $i++){
                                 echo $files[$a][$i]; 
                             }
                         ?>
+
+
+
                         </td>
                         <td> 
                             <div class="form-check">
