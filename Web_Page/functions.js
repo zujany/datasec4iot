@@ -2,11 +2,12 @@
 
 // Date filter 
 function date_filter(){
-	
-	var from = $('#date-filter-from').toString();
-	var to = $('#date-filter-to').toString();
+	var from = $('#date-filter-from');
+	var to = $('#date-filter-to');
+	// console.log(from);
 
-	console.log(from);
+	var d = new Date();
+	console.log(d.getFullYear());
 }
 
 function download_all_selected(){
