@@ -2,23 +2,26 @@
 
 // Date filter 
 function date_filter(){
-	var from = $('#date-filter-from');
-	var to = $('#date-filter-to');
-	
-	var input = from.value;
-	var dateEntered = new Date(input);
-	console.log(input); //e.g. 2015-11-13
+        var from_raw = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
+        var to = $('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val();
 
-	// var d = new Date();
-	// console.log(d.getFullYear());
+		var from = new Date(str.concat(from_raw.getFullYear(),-,from_raw.getMonth()+1,-,from_raw.getDate())
+        console.info(from)
+
+	// if(from.getTime() == to.getTime()) {
+	//         console.info("a equals b");
+	// } 
+	// else {
+	//         console.log("a NOT equals b");
+	// }
 }
 
-// document.getElementById("dateInput").addEventListener("change", function() {
-//     var input = this.value;
-//     var dateEntered = new Date(input);
-//     console.log(input); //e.g. 2015-11-13
-//     console.log(dateEntered); //e.g. Fri Nov 13 2015 00:00:00 GMT+0000 (GMT Standard Time)
-// });
+document.getElementById("date-filter-from").addEventListener("change", function() {
+    var input = this.value;
+    var dateEntered = new Date(input);
+    console.log(input); //e.g. 2015-11-13
+    console.log(dateEntered); //e.g. Fri Nov 13 2015 00:00:00 GMT+0000 (GMT Standard Time)
+});
 
 function download_all_selected(){
 	console.log("Hello Word");
