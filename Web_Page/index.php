@@ -84,7 +84,7 @@
                 <p>
                     <!-- Displaying date of the file !-->
                     <tr>
-                    	<td>
+                    	<td class="file_date">
                         <?php
                             for ($i = 8; $i < 12; $i++){
                                 echo $files[$a][$i]; 
@@ -98,9 +98,6 @@
                                 echo $files[$a][$i]; 
                             }
                         ?>
-
-
-
                         </td>
                         <td> 
                             <div class="form-check">

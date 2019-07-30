@@ -5,13 +5,17 @@ function date_filter(){
         var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
         var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
 
-	 if(from.getTime() < to.getTime()) {
-	         console.info("from < to");
-	 } 
-	 else {
-	         console.log("from > to");
-	 }
-}
+        var files_date = $('.file_date');
+
+        console.log(files_date[0]);
+
+// 	 if(from.getTime() < to.getTime()) {
+// 	         console.info("from < to");
+// 	 } 
+// 	 else {
+// 	         console.log("from > to");
+// 	 }
+// }
 
 function download_all_selected(){
 	console.log("Hello Word");
