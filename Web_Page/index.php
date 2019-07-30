@@ -58,10 +58,7 @@
             </div>
         </form>
 
-        <button type="button" class="btn btn-primary" onclick="date_filter()">Filter</button>
-
-
-
+        <button type="button" class="btn btn-primary" onclick="filter_date()">Filter</button>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
