@@ -44,12 +44,12 @@
 
     <!-- Filter by date -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
-        <h4 id="filters_title">Filters</h4>
+        <h4 id="filters_title">Filters by date</h4>
 
         <form >
             <div class="form-group">
                 <label for="from-date-input" >From</label>
-                    <input class="form-control" type="date" value="dd/mm/yyyy" id="date-filter-from">
+                    <input class="form-control" type="date" placeholder="dd/mm/yyyy" id="date-filter-from">
             </div>
 
             <div class="form-group">
@@ -58,9 +58,7 @@
             </div>
         </form>
 
-        <button type="button" id="submit-date-filter" class="btn btn-info" enable>
-        <i class="fa fa-plus"></i>
-        </button>
+        <button type="button" class="btn btn-primary" onclick="date_filter()">Filter</button>
 
 
 
