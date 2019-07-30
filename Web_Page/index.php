@@ -66,11 +66,11 @@
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <table class="table table-striped">
             <thead id="table_header">
-            <tr>
-              <th scope="col">File</th>
-              <th scope="col">Download</th>
-              <th></th>
-            </tr>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Download</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody id="table_content">
                 <?php
@@ -80,10 +80,17 @@
                 for ($a = 2; $a < count($files); $a++)
                 {
                 ?>
+
                 <p>
-                    <!-- Displaying file name !-->
+                    <!-- Displaying date of the file !-->
                     <tr>
-                    	<td><?php echo $files[$a]; ?></td>
+                    	<td>
+                        <?php
+                            for ($i = 8; $a < 17; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                        ?>
+                        </td>
                         <td> 
                             <div class="form-check">
                             <input class="form-check-input checkbox-files" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
