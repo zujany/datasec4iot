@@ -5,9 +5,15 @@ function date_filter(){
         var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
         var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
 
-        var files_date = $('.file_date');
+        //Dates of all the files
+        var files_dates = $('.file_date');
 
-        console.log(files_date[0]);
+        for (var i = 0; i < files_dates.length; i++){
+			date = new Date(files_date[i])
+			console.log(date)
+		}
+
+        console.log(files_date);
 
 // 	 if(from.getTime() < to.getTime()) {
 // 	         console.info("from < to");
