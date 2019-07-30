@@ -4,11 +4,21 @@
 function date_filter(){
 	var from = $('#date-filter-from');
 	var to = $('#date-filter-to');
-	// console.log(from);
+	
+	var input = from.value;
+	var dateEntered = new Date(input);
+	console.log(input); //e.g. 2015-11-13
 
-	var d = new Date();
-	console.log(d.getFullYear());
+	// var d = new Date();
+	// console.log(d.getFullYear());
 }
+
+// document.getElementById("dateInput").addEventListener("change", function() {
+//     var input = this.value;
+//     var dateEntered = new Date(input);
+//     console.log(input); //e.g. 2015-11-13
+//     console.log(dateEntered); //e.g. Fri Nov 13 2015 00:00:00 GMT+0000 (GMT Standard Time)
+// });
 
 function download_all_selected(){
 	console.log("Hello Word");
