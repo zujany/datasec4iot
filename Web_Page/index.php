@@ -51,12 +51,12 @@
         <form >
             <div class="form-group">
                 <label for="from-date-input" >From</label>
-                    <input class="form-control" type="date" placeholder="dd/mm/yyyy" id="date-filter-from">
+                    <input class="form-control" type="string" placeholder="dd/mm/yyyy" id="date-filter-from">
             </div>
 
             <div class="form-group">
                 <label for="to-date-input" >To</label>
-                    <input class="form-control" type="date" placeholder="dd/mm/yyyy" id="date-filter-to">
+                    <input class="form-control" type="string" placeholder="dd/mm/yyyy" id="date-filter-to">
             </div>
         </form>
 
