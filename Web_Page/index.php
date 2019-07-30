@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
 <script type="text/javascript" src="functions.js"></script>
 
 </head>
@@ -59,7 +60,7 @@
             </div>
         </form>
 
-        <button type="button" class="btn btn-primary" onclick="select_all()">Filter</button>
+        <button type="button" class="btn btn-primary" onclick="date_filter()">Filter</button>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
