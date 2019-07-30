@@ -2,6 +2,14 @@
 
 // Date filter 
 function date_filter(){
+	
+	var from = $('#date-filter-from');
+	var to = $('#date-filter-to');
+
+	console.log(from, to);
+}
+
+function download_all_selected(){
 	console.log("Hello Word");
 }
 
