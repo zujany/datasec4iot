@@ -21,6 +21,7 @@ function download_all_selected(){
 // Select all files
 
 function select_all(){
+	console.log("Hello Word")
 	var check_box = $('.checkbox-files');
 	var select_all_checkbox = $('#select_all');
 

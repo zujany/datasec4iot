@@ -58,7 +58,7 @@
             </div>
         </form>
 
-        <button type="button" class="btn btn-primary" onclick="zujany()">Filter</button>
+        <button type="button" class="btn btn-primary" onclick="select_all()">Filter</button>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
