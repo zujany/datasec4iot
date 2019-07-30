@@ -3,7 +3,7 @@
 // Date filter 
 function date_filter(){
 	
-	var from = $('#date-filter-from');
+	var from = $('#date-filter-from').value;
 	var to = $('#date-filter-to');
 
 	console.log(from);
