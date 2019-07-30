@@ -3,8 +3,9 @@
 // Date filter 
 function date_filter(){
 	
-	var from = $('#date-filter-from').value;
+	var from = dateObj.toString($('#date-filter-from'));
 	var to = $('#date-filter-to');
+
 
 	console.log(from);
 }
