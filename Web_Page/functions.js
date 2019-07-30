@@ -1,5 +1,14 @@
 
 
+// Date filter 
+function date_filter(){
+	
+	var from = $('#date-filter-from');
+	var to = $('#date-filter-to');
+
+	console.log(from, to);
+}
+
 
 // Download selected files
 
@@ -37,10 +46,3 @@ $(document).ready(function () {
 	$('.download_links').hide();
 });
 
-// Date filter 
-function date_filter(){
-	var from = $('#date-filter-from');
-	var to = $('#date-filter-to');
-
-	console.log(from, to);
-}
