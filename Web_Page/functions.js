@@ -15,7 +15,7 @@ function date_filter(){
 // 	 else {
 // 	         console.log("from > to");
 // 	 }
-// }
+}
 
 function download_all_selected(){
 	console.log("Hello Word");
