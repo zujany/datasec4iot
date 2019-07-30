@@ -1,7 +1,7 @@
 
 
 // Date filter 
-function filter_date(){
+function zujany(){
 	console.log("Hello Word");
 }
 
