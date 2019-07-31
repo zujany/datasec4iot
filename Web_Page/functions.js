@@ -23,9 +23,9 @@ function date_filter(){
 			if((date.getTime() < from.getTime()) || (date.getTime() > to.getTime())){
 
 				// console.log("comparing");
-
+				
 				file_id = files_dates[i].id;
-
+				console.log(file_id);
 				$(document).ready(function () {
 					$('#file_id').parent().hide();
 				});
