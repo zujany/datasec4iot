@@ -27,7 +27,7 @@ function date_filter(){
 				// console.log(files_dates[i].id);
 
 				$(document).ready(function () {
-					$('#files_dates[i].id').parent().hide();
+					$(#files_dates[i].id).parent().hide();
 				});
 			}
 		}
