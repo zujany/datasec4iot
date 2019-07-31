@@ -27,7 +27,7 @@ function date_filter(){
 				file_id = files_dates[i].id;
 				console.log(file_id);
 
-				$('#2019-07-30').hide();
+				$('#2019-07-30').parent().hide();
 				// $(document).ready(function () {
 				// 	$('#file_id').parent().hide();
 				// });
