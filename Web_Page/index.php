@@ -44,7 +44,7 @@
 <div class="container" id="content">
 <div class="row">
 
-    <!-- Filter by date -->
+<!-- Filter by date -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
         <h4 id="filters_title">Filters by date</h4>
         <form>
@@ -55,9 +55,11 @@
             <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remove</button>
         </form>
     </div>
-    <!--  List -->
+<!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<!-- Table -->
         <table class="table table-striped">
+<!-- Table header -->
             <thead id="table_header">
                 <tr>
                     <th scope="col">Date</th>
@@ -65,6 +67,7 @@
                     <th></th>
                 </tr>
             </thead>
+<!-- Table body -->
             <tbody id="table_content">
                 <?php
                 // This will return all files in that folder
@@ -116,7 +119,7 @@
                 <?php
                 }
                 ?> 
-                <p>   
+             <!--    <p>   
                     <tr>
                         <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
                         </td>
@@ -128,8 +131,23 @@
                         </td>
                         
                     </tr>
-                </p>
+                </p> -->
             </tbody>
+<!-- Table footer -->
+            <tfoot>
+                <tr>
+                    <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
+                    </td>
+                     <td> 
+                        <div class="form-check">
+                        <input class="form-check-input" id= "select_all" type="checkbox" onclick="select_all()">
+                        <label class="form-check-label" for="inlineCheckbox1" ">Select All</label>
+                        </div>
+                    </td> 
+                </tr>
+            </tfoot>
+
+
         </table>
     </div>
 </div>
