@@ -10,17 +10,13 @@ $(function()
 function date_filter(){
     var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
     var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
-
-    console.log(from);
-    console.log(to);
-
     //To have a valid filter interval 
 	if(from.getTime() < to.getTime()) {
 		//Dates of all the files -string-
     	var files_dates = $('.file_date');
     	for (var i = 0; i < files_dates.length; i++){
 
-    		console.log(files_dates[i].id);
+    		
 
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
@@ -30,6 +26,8 @@ function date_filter(){
 			if((date.getTime() >= from.getTime()) && (date.getTime() <= to.getTime())){
 
 				console.log("comparing");
+
+				console.log(files_dates[i].id);
 
 				$(document).ready(function () {
 					$('#files_dates[i].id').parent().hide();
