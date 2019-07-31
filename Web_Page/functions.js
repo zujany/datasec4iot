@@ -10,10 +10,10 @@ function date_filter(){
 
         for (var i = 0; i < files_dates.length; i++){
 			// date = new Date(files_dates[i])
-			console.log(files_dates[i])
+			console.log(files_dates[i].innerHTML)
 		}
 
-        console.log(files_dates);
+        // console.log(files_dates);
 
 // 	 if(from.getTime() < to.getTime()) {
 // 	         console.info("from < to");
