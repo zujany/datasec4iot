@@ -11,6 +11,9 @@ function date_filter(){
     var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
     var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
 
+    console.log(from);
+    console.log(to);
+
     //To have a valid filter interval 
 	if(from.getTime() < to.getTime()) {
 		//Dates of all the files -string-
