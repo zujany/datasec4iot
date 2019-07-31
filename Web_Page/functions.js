@@ -18,9 +18,13 @@ function date_filter(){
     	for (var i = 0; i < files_dates.length; i++){
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id)
+
+			console.log(date);
 			//Comparison to filtering
-			if(date.getTime() >= from.getTime() && date.getTime() <= to.getTime()){
-				console.log(date)
+			if((date.getTime() >= from.getTime()) && (date.getTime() <= to.getTime())){
+
+				console.log("comparing");
+
 				$(document).ready(function () {
 					$('.file_date').hide();
 				});
