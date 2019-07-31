@@ -31,7 +31,7 @@
     left:0px;
     right:0px;
     bottom:0px;
-/*    overflow-y:auto; */       
+    overflow-y:auto;        
 }​
 
 
@@ -55,10 +55,6 @@
     position: fixed;
 }
 
-.table_header_footer{
+/*.table_header_footer{
     position: fixed;
-}
-
-.table_content{
-    overflow-y:auto;
-}
+}*/
