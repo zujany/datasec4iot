@@ -13,7 +13,7 @@ function date_filter(){
 		// 	console.log(date)
 		// }
 
-        console.log(files_date);
+        console.log(files_dates);
 
 // 	 if(from.getTime() < to.getTime()) {
 // 	         console.info("from < to");
