@@ -50,7 +50,7 @@
 
         <form >
             <div class="form-group">
-                <label for="from-date-input" >From</label>
+                <label>From</label>
                     <input class="form-control" type="date" placeholder="dd/mm/yyyy" id="date-filter-from">
             </div>
 
@@ -58,6 +58,16 @@
                 <label for="to-date-input" >To</label>
                     <input class="form-control" type="date" placeholder="dd/mm/yyyy" id="date-filter-to">
             </div>
+
+
+            <div class="input-group date" data-provide="datepicker">
+                <input type="text" class="form-control">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+            </div>
+
+
         </form>
 
         <button type="button" class="btn btn-primary" onclick="date_filter()">Filter</button>
