@@ -1,8 +1,8 @@
 
-
+// Datepickers
 $(function() 
 {
-    $( "#datepicker1" ).datepicker();
+    $( "#date-filter-from" ).datepicker();
     $( "#datepicker2" ).datepicker();
 });
 
@@ -20,6 +20,7 @@ function date_filter(){
 			date = new Date(files_dates[i].id)
 			//Comparison to filtering
 			if(date.getTime() >= from.getTime() && date.getTime() <= to.getTime()){
+				console.log(date)
 				$(document).ready(function () {
 					$('.file_date').hide();
 				});
