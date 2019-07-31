@@ -84,23 +84,32 @@
                 <p>
                     <!-- Displaying date of the file !-->
                     <tr>
-                    	<td class="file_date" id="<?php substr($files[$a], 8,8);?>">
+                    	<td class="file_date" id="<?php
+                            for ($i = 8; $i < 12; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 12; $i < 14; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 14; $i < 16; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                        ?>">
                         <?php
-                            // substr($files[$a], 8,8);
-                            substr("abcdf", 3,2);
-                            // for ($i = 8; $i < 12; $i++){
-                            //     echo $files[$a][$i]; 
-                            // }
-                            // echo "-";
-                            // for ($i = 12; $i < 14; $i++){
-                            //     echo $files[$a][$i]; 
-                            // }
-                            // echo "-";
-                            // for ($i = 14; $i < 16; $i++){
-                            //     echo $files[$a][$i]; 
-                            // }
+                            for ($i = 8; $i < 12; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 12; $i < 14; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 14; $i < 16; $i++){
+                                echo $files[$a][$i]; 
+                            }
                         ?>
-                        fbebef
                         </td>
                         <td> 
                             <div class="form-check">
