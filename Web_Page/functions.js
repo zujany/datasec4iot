@@ -1,5 +1,11 @@
 
 
+$(function() 
+{
+    $( "#datepicker1" ).datepicker();
+    $( "#datepicker2" ).datepicker();
+});
+
 // Date filter 
 function date_filter(){
     var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());

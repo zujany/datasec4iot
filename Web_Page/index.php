@@ -60,10 +60,8 @@
             </div>
         </form> -->
 
-        <p><input type="text" id="datepicker1" id="date-filter-from"></p>
-        <div id="datepicker2"></div>
-        <p><input type="text" id="datepicker2" id="date-filter-to"></p>
-        <div id="datepicker2" ></div>
+        <p>From: <input type="text" id="datepicker1"></p>
+        <p>To: <input type="text" id="datepicker2"></p>
 
         <button type="button" class="btn btn-primary" onclick="date_filter()">Filter</button>
     </div>
