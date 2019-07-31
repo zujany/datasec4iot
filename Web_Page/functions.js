@@ -8,10 +8,10 @@ function date_filter(){
         //Dates of all the files
         var files_dates = $('.file_date');
 
-        for (var i = 0; i < files_dates.length; i++){
-			date = new Date(files_date[i])
-			console.log(date)
-		}
+  //       for (var i = 0; i < files_dates.length; i++){
+		// 	date = new Date(files_date[i])
+		// 	console.log(date)
+		// }
 
         console.log(files_date);
 
