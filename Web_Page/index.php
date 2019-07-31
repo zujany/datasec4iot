@@ -86,17 +86,18 @@
                     <tr>
                     	<td class="file_date" id="<?php substr($files[$a], 8,15)?>">
                         <?php
-                            for ($i = 8; $i < 12; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                            echo "-";
-                            for ($i = 12; $i < 14; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                            echo "-";
-                            for ($i = 14; $i < 16; $i++){
-                                echo $files[$a][$i]; 
-                            }
+                            substr($files[$a], 8,15)
+                            // for ($i = 8; $i < 12; $i++){
+                            //     echo $files[$a][$i]; 
+                            // }
+                            // echo "-";
+                            // for ($i = 12; $i < 14; $i++){
+                            //     echo $files[$a][$i]; 
+                            // }
+                            // echo "-";
+                            // for ($i = 14; $i < 16; $i++){
+                            //     echo $files[$a][$i]; 
+                            // }
                         ?>
                         </td>
                         <td> 
