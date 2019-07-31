@@ -24,15 +24,15 @@
 }
 
 /*To enable scroll bar without including the header*/
-/*#content
+#content
 {
     position:absolute;
     top: 56px;
     left:0px;
     right:0px;
     bottom:0px;
-    overflow-y:auto;        
-}​*/
+    /*overflow-y:auto;*/        
+}​
 
 
 /*Table*/
