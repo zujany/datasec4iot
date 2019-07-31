@@ -22,9 +22,9 @@ function date_filter(){
 			//Comparison to filtering
 			if((date.getTime() < from.getTime()) || (date.getTime() > to.getTime())){
 
-				console.log("comparing");
+				// console.log("comparing");
 
-				console.log(files_dates[i].id);
+				// console.log(files_dates[i].id);
 
 				$(document).ready(function () {
 					$('#files_dates[i].id').parent().hide();
