@@ -54,3 +54,7 @@
 .filter_date {
     position: fixed;
 }
+
+.table_header_footer{
+    position: fixed;
+}

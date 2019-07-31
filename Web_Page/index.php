@@ -47,7 +47,7 @@
 <!-- Filter by date -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
        <form class="filter_date">
-            <h4 id="filters_title">Filters by date</h4>
+            <h4 id="filters_title">Filter by date</h4>
             <p>From:<br/> <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
             <p>To:<br/> <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
 
@@ -60,7 +60,7 @@
 <!-- Table -->
         <table class="table table-striped">
 <!-- Table header -->
-            <thead id="table_header">
+            <thead class="table_header_footer">
                 <tr>
                     <th scope="col">Date</th>
                     <th scope="col">Download</th>
@@ -134,7 +134,7 @@
                 </p> -->
             </tbody>
 <!-- Table footer -->
-            <tfoot>
+            <tfoot class="table_header_footer">
                 <tr>
                     <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
                     </td>
