@@ -40,16 +40,45 @@ function remove_date_filter(){
 	}
 }
 
-// Download selected files
+// Select all files
+function select_all(){
+	var files_dates = $('.file_date');
+	var check_box = $('.checkbox-files');
+	var select_all_checkbox = $('#select_all');
 
+	if (select_all_checkbox[0].checked) {
+		for (var i = 0; i < check_box.length; i++){
+			file_id = files_dates[i].id;
+			if (($('#' + file_id).is(":hidden"))== false){
+				check_box[i].checked = true;
+			}		
+		}
+	}
+	else{
+		for (var i = 0; i < check_box.length; i++){
+			check_box[i].checked = false;
+		}
+	} 
+		// if (select_all_checkbox[0].checked ) {
+		// 	for (var i = 0; i < check_box.length; i++){
+		// 		check_box[i].checked = true;		
+		// 	}
+		// }
+		// else{
+		// 	for (var i = 0; i < check_box.length; i++){
+		// 		check_box[i].checked = false;
+		// 	}
+		// } 
+	
+}
+
+// Download selected files
 function download_all_selected(){
 	var check_box = $('.checkbox-files');
-
 	for (var i = 0; i < check_box.length; i++){
-
 		if($('#' + check_box[i]).is(":visible")){
 	        if (check_box[i].checked) {
-				check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
+				check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click();
 			}
     	} 
 		// if (check_box[i].checked) {
@@ -58,23 +87,7 @@ function download_all_selected(){
 	}
 }
 
-// Select all files
 
-function select_all(){
-	var check_box = $('.checkbox-files');
-	var select_all_checkbox = $('#select_all');
-
-	if (select_all_checkbox[0].checked) {
-		for (var i = 0; i < check_box.length; i++){
-			check_box[i].checked = true;		
-		}
-	}
-	else{
-		for (var i = 0; i < check_box.length; i++){
-			check_box[i].checked = false;
-		}
-	} 
-}
 
 // Hide individual donwload  links
 $(document).ready(function () {
