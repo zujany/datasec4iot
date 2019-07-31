@@ -20,18 +20,24 @@ function date_filter(){
 			date = new Date(files_dates[i].id);
 
 			//Comparison to filtering
-			if((date.getTime() < from.getTime()) || (date.getTime() > to.getTime())){
-
-				// console.log("comparing");
-
-				file_id = files_dates[i].id;
-				console.log(file_id);
-
-				$('#' + file_id).parent().hide();
-				// $(document).ready(function () {
-				// 	$('#file_id').parent().hide();
-				// });
+			if((date.getTime() >= from.getTime()) || (date.getTime() <= to.getTime())){
 			}
+			else{
+				$('#' + files_dates[i].id).parent().hide();
+			}
+
+			// if((date.getTime() < from.getTime()) || (date.getTime() > to.getTime())){
+
+			// 	// console.log("comparing");
+
+			// 	file_id = files_dates[i].id;
+			// 	console.log(file_id);
+
+			// 	$('#' + file_id).parent().hide();
+			// 	// $(document).ready(function () {
+			// 	// 	$('#file_id').parent().hide();
+			// 	// });
+			// }
 		}
 	} 
 	else {
