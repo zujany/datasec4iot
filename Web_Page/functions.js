@@ -19,7 +19,7 @@ function date_filter(){
 		//Dates of all the files -string-
     	var files_dates = $('.file_date');
     	for (var i = 0; i < files_dates.length; i++){
-    		
+
     		console.log(files_dates[i].id);
 
 			// Dates of the files -date-
@@ -32,7 +32,7 @@ function date_filter(){
 				console.log("comparing");
 
 				$(document).ready(function () {
-					$('.file_date').hide();
+					$('#files_dates[i].id')..parent().hide();
 				});
 			}
 		}
