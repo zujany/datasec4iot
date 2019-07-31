@@ -32,7 +32,7 @@ function date_filter(){
 				console.log("comparing");
 
 				$(document).ready(function () {
-					$('#files_dates[i].id')..parent().hide();
+					$('#files_dates[i].id').parent().hide();
 				});
 			}
 		}
