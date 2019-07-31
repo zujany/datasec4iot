@@ -16,14 +16,11 @@ function date_filter(){
     	var files_dates = $('.file_date');
     	for (var i = 0; i < files_dates.length; i++){
 
-    		
-
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
 
-			console.log(date);
 			//Comparison to filtering
-			if((date.getTime() >= from.getTime()) && (date.getTime() <= to.getTime())){
+			if(date.getTime() >= from.getTime()){
 
 				console.log("comparing");
 
