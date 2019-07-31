@@ -24,6 +24,7 @@ function date_filter(){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
+		}	
 	} 
 	else {
 	     console.log("Invalid interval");
