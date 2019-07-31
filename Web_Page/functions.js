@@ -24,10 +24,10 @@ function date_filter(){
 
 				// console.log("comparing");
 
-				// console.log(files_dates[i].id);
+				file_id = files_dates[i].id;
 
 				$(document).ready(function () {
-					$(#files_dates[i].id).parent().hide();
+					$('#file_id').parent().hide();
 				});
 			}
 		}
