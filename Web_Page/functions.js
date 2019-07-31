@@ -85,7 +85,8 @@ function clean_all(){
 	$('#date-filter-from').val("");
     $('#date-filter-to').val("");
     // Select all button
-    $('#select_all').checked = false;
+    var select_all_checkbox = $('#select_all');
+    select_all_checkbox[0].checked = false;
     //Checkbox of the files
     var check_box = $('.checkbox-files');
 	for (var i = 0; i < check_box.length; i++){
