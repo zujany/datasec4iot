@@ -48,8 +48,8 @@
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
         <h4 id="filters_title">Filters by date</h4>
         <form>
-            <p>From: <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
-            <p>To: <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
+            <p>From:<br/> <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
+            <p>To:<br/> <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
 
             <button type="button" class="btn btn-primary" onclick="date_filter()"> Add</button>
             <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remove</button>
