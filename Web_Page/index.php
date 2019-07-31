@@ -86,7 +86,7 @@
                     <tr>
                     	<td class="file_date" id="<?php substr($files[$a], 8,15)?>">
                         <?php
-                            substr($files[$a], 8,15)
+                            substr($files[$a], 8,8)
                             // for ($i = 8; $i < 12; $i++){
                             //     echo $files[$a][$i]; 
                             // }
