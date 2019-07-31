@@ -68,7 +68,7 @@
                 </tr>
             </thead>
 <!-- Table body -->
-            <tbody id="table_content">
+            <tbody class="table_content">
                 <?php
                 // This will return all files in that folder
                 $files = scandir("data");
@@ -119,19 +119,6 @@
                 <?php
                 }
                 ?> 
-             <!--    <p>   
-                    <tr>
-                        <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
-                        </td>
-                         <td> 
-                            <div class="form-check">
-                            <input class="form-check-input" id= "select_all" type="checkbox" onclick="select_all()">
-                            <label class="form-check-label" for="inlineCheckbox1" ">Select All</label>
-                            </div>
-                        </td>
-                        
-                    </tr>
-                </p> -->
             </tbody>
 <!-- Table footer -->
             <tfoot class="table_header_footer">
