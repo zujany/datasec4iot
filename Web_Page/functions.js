@@ -21,7 +21,8 @@ function date_filter(){
 
 			//Comparison to filtering
 			if(!((date.getTime() >= from.getTime()) || (date.getTime() <= to.getTime()))){
-				$('#' + files_dates[i].id).parent().hide();
+				file_id = files_dates[i].id;
+				$('#' + file_id).parent().hide();
 			}
 
 			// if((date.getTime() < from.getTime()) || (date.getTime() > to.getTime())){
