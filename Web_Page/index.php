@@ -50,15 +50,8 @@
         <p>From: <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
         <p>To: <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
 
-        <button type="button" class="btn btn-primary" onclick="date_filter()">Filter</button>
-
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Filter by date</strong> 
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="remove_date_filter()">
-        <span aria-hidden="true">&times;</span>
-        </button>
-
-</div>    
+        <button type="button" class="btn btn-primary" onclick="date_filter()"> Add</button>
+        <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remover</button>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">

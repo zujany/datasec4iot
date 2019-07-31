@@ -39,11 +39,6 @@ function remove_date_filter(){
 	}
 }
 
-function download_all_selected(){
-	console.log("Hello Word");
-}
-
-
 // Download selected files
 
 function download_all_selected(){
@@ -72,7 +67,6 @@ function select_all(){
 			check_box[i].checked = false;
 		}
 	} 
-
 }
 
 // Hide individual donwload  links
