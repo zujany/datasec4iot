@@ -24,23 +24,18 @@ function date_filter(){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
-
-			// if((date.getTime() < from.getTime()) || (date.getTime() > to.getTime())){
-
-			// 	// console.log("comparing");
-
-			// 	file_id = files_dates[i].id;
-			// 	console.log(file_id);
-
-			// 	$('#' + file_id).parent().hide();
-			// 	// $(document).ready(function () {
-			// 	// 	$('#file_id').parent().hide();
-			// 	// });
-			// }
-		}
 	} 
 	else {
 	     console.log("Invalid interval");
+	}
+}
+
+// Remove Date filter
+function remove_date_filter(){
+	var files_dates = $('.file_date');
+	for (var i = 0; i < files_dates.length; i++){
+			file_id = files_dates[i].id;
+			$('#' + file_id).parent().show();
 	}
 }
 
