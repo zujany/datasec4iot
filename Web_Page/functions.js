@@ -18,24 +18,10 @@ function date_filter(){
 					$('.file_date').hide();
 				});
 			}
-
 		}
 	} 
 	else {
 	     console.log("Invalid interval");
-	}
-
-    
-	//To have a valid filter interval 
-	if(from.getTime() < to.getTime()) {
-		if(){
-
-		}
-	} 
-
-
-	else {
-	     console.log("from > to");
 	}
 }
 
