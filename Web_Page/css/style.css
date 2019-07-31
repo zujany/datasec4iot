@@ -48,3 +48,9 @@
 #filters_title{
 	padding-top: 30px;
 }
+
+/*Filter*/
+
+.filter_date {
+    position: fixed;
+}
