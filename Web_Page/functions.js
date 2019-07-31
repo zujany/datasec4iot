@@ -81,9 +81,12 @@ $(document).ready(function () {
 
 // Clean all: input forms and checkboxs
 function clean_all(){
-	var from = $('#date-filter-from');
-    var to = $('#date-filter-to');
-    //To have a valid filter interval 
-    from.val() = ""
-    from.val() = ""
+	$('#date-filter-from').val("");
+    $('#date-filter-to').val("");
+
+    var check_box = $('.checkbox-files');
+	for (var i = 0; i < check_box.length; i++){
+			check_box[i].checked = false;
+	}
+
 }
