@@ -86,7 +86,8 @@
 
                 <p>
                     <!-- Displaying date of the file !-->
-                    <tr id="<?php
+                    <tr>
+                    	<td class="file_date" id="<?php
                             for ($i = 8; $i < 12; $i++){
                                 echo $files[$a][$i]; 
                             }
@@ -98,8 +99,7 @@
                             for ($i = 14; $i < 16; $i++){
                                 echo $files[$a][$i]; 
                             }
-                        ?>">
-                    	<td class="file_date" >
+                        ?>" >
                         <?php
                             for ($i = 8; $i < 12; $i++){
                                 echo $files[$a][$i]; 
