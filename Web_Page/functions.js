@@ -39,6 +39,7 @@ function remove_date_filter(){
 		$('#' + file_id).parent().show();
 	}
 
+	clean_all();
 }
 
 // Select all files
