@@ -31,7 +31,7 @@
     left:0px;
     right:0px;
     bottom:0px;
-    /*overflow-y:auto;*/        
+/*    overflow-y:auto; */       
 }​
 
 
@@ -55,57 +55,10 @@
     position: fixed;
 }
 
-/*.table_header_footer{
+.table_header_footer{
     position: fixed;
 }
 
 .table_content{
     overflow-y:auto;
-}*/
-
-/*div {
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-table {
-  width: 100%
-}*/
-
-thead tr,
-tfoot tr {
-  position: absolute;
-  left: 0;
-  right: 15px;
-  /* to not cover the scrollbar*/
-}
-
-thead th,
-tfoot td {
-  display: inline-block;
-}
-
-thead tr {
-  top: 0
-}
-
-tfoot tr {
-  top: 500px/* same value has max-height from div */
-}
-
-th,
-td {
-  width: calc((100%/3) - 5px);
-  font-size: 12px;
-  text-align: center
-}
-
-/*give some space between thead and tfoot*/
-
-tbody tr:first-of-type td {
-  padding-top: 35px;
-}
-
-tbody tr:last-of-type td {
-  padding-bottom: 35px;
 }
