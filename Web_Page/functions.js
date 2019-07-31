@@ -38,6 +38,7 @@ function remove_date_filter(){
 		file_id = files_dates[i].id;
 		$('#' + file_id).parent().show();
 	}
+
 }
 
 // Select all files
@@ -60,17 +61,6 @@ function select_all(){
 			check_box[i].checked = false;
 		}
 	} 
-		// if (select_all_checkbox[0].checked ) {
-		// 	for (var i = 0; i < check_box.length; i++){
-		// 		check_box[i].checked = true;		
-		// 	}
-		// }
-		// else{
-		// 	for (var i = 0; i < check_box.length; i++){
-		// 		check_box[i].checked = false;
-		// 	}
-		// } 
-	
 }
 
 // Download selected files
@@ -83,10 +73,16 @@ function download_all_selected(){
 	}
 }
 
-
-
 // Hide individual donwload  links
 $(document).ready(function () {
 	$('.download_links').hide();
 });
 
+// Clean all: input forms and checkboxs
+function clean_all(){
+	var from = $('#date-filter-from');
+    var to = $('#date-filter-to');
+    //To have a valid filter interval 
+    from.val() = ""
+    from.val() = ""
+}
