@@ -20,7 +20,7 @@ function date_filter(){
 			date = new Date(files_dates[i].id);
 
 			//Comparison to filtering
-			if(!((date.getTime() >= from.getTime()) && (date.getTime() <= to.getTime()))){
+			if(!((date.getTime() >= from.getTime()) && (date.getTime() < to.getTime()))){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
