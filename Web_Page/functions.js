@@ -50,6 +50,7 @@ function select_all(){
 		for (var i = 0; i < check_box.length; i++){
 			file_id = files_dates[i].id;
 			if (($('#' + file_id).is(":hidden"))== false){
+				console.log(file_id);
 				check_box[i].checked = true;
 			}		
 		}
