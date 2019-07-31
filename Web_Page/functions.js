@@ -19,8 +19,11 @@ function date_filter(){
 		//Dates of all the files -string-
     	var files_dates = $('.file_date');
     	for (var i = 0; i < files_dates.length; i++){
+    		
+    		console.log(files_dates[i].id);
+
 			// Dates of the files -date-
-			date = new Date(files_dates[i].id)
+			date = new Date(files_dates[i].id);
 
 			console.log(date);
 			//Comparison to filtering
