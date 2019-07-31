@@ -48,27 +48,22 @@
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
         <h4 id="filters_title">Filters by date</h4>
 
-        <form >
+       <!--  <form >
             <div class="form-group">
                 <label>From</label>
-                    <input class="form-control" placeholder="mm/dd/yyyy" id="date-filter-from">
+                    <input class="form-control" type="date" placeholder="mm/dd/yyyy" id="date-filter-from">
             </div>
 
             <div class="form-group">
                 <label>To</label>
                     <input class="form-control" type="date" placeholder="mm/dd/yyyy" id="date-filter-to">
             </div>
+        </form> -->
 
-
-            <div class="input-group date" data-provide="datepicker">
-                <input type="text" class="form-control">
-                <div class="input-group-addon">
-                    <span class="glyphicon glyphicon-th"></span>
-                </div>
-            </div>
-
-
-        </form>
+        <p><input type="text" id="datepicker1" id="date-filter-from"></p>
+        <div id="datepicker2"></div>
+        <p><input type="text" id="datepicker2" id="date-filter-to"></p>
+        <div id="datepicker2" ></div>
 
         <button type="button" class="btn btn-primary" onclick="date_filter()">Filter</button>
     </div>
