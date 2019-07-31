@@ -2,27 +2,41 @@
 
 // Date filter 
 function date_filter(){
-        var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
-        var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
+    var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
+    var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
 
-        //Dates of all the files
-        var files_dates = $('.file_date');
-
-        for (var i = 0; i < files_dates.length; i++){
+    //To have a valid filter interval 
+	if(from.getTime() < to.getTime()) {
+		//Dates of all the files -string-
+    	var files_dates = $('.file_date');
+    	for (var i = 0; i < files_dates.length; i++){
+			// Dates of the files -date-
 			date = new Date(files_dates[i].id)
-			// console.log(files_dates[i].innerHTML)
-			console.log(date)
-			console.log(date.getDate())
+			//Comparison to filtering
+			if(date.getTime() >= from.getTime() && date.getTime() <= to.getTime()){
+				$(document).ready(function () {
+					$('.file_date').hide();
+				});
+			}
+
 		}
+	} 
+	else {
+	     console.log("Invalid interval");
+	}
 
-        // console.log(files_dates);
+    
+	//To have a valid filter interval 
+	if(from.getTime() < to.getTime()) {
+		if(){
 
-// 	 if(from.getTime() < to.getTime()) {
-// 	         console.info("from < to");
-// 	 } 
-// 	 else {
-// 	         console.log("from > to");
-// 	 }
+		}
+	} 
+
+
+	else {
+	     console.log("from > to");
+	}
 }
 
 function download_all_selected(){
