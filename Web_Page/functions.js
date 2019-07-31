@@ -81,9 +81,12 @@ $(document).ready(function () {
 
 // Clean all: input forms and checkboxs
 function clean_all(){
+	//Date inputs
 	$('#date-filter-from').val("");
     $('#date-filter-to').val("");
-
+    // Select all button
+    $('#select_all').checked = false;
+    //Checkbox of the files
     var check_box = $('.checkbox-files');
 	for (var i = 0; i < check_box.length; i++){
 			check_box[i].checked = false;
