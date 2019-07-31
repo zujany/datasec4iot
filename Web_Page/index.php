@@ -47,11 +47,13 @@
     <!-- Filter by date -->
     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
         <h4 id="filters_title">Filters by date</h4>
-        <p>From: <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
-        <p>To: <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
+        <form>
+            <p>From: <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
+            <p>To: <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
 
-        <button type="button" class="btn btn-primary" onclick="date_filter()"> Add</button>
-        <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remove</button>
+            <button type="button" class="btn btn-primary" onclick="date_filter()"> Add</button>
+            <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remove</button>
+        </form>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
