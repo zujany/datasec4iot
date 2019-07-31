@@ -3,7 +3,7 @@
 $(function() 
 {
     $( "#date-filter-from" ).datepicker();
-    $( "#datepicker2" ).datepicker();
+    $( "#date-filter-to" ).datepicker();
 });
 
 // Date filter 
