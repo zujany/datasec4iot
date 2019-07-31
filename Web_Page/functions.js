@@ -35,8 +35,8 @@ function date_filter(){
 function remove_date_filter(){
 	var files_dates = $('.file_date');
 	for (var i = 0; i < files_dates.length; i++){
-			file_id = files_dates[i].id;
-			$('#' + file_id).parent().show();
+		file_id = files_dates[i].id;
+		$('#' + file_id).parent().show();
 	}
 }
 
@@ -46,9 +46,15 @@ function download_all_selected(){
 	var check_box = $('.checkbox-files');
 
 	for (var i = 0; i < check_box.length; i++){
-		if (check_box[i].checked) {
-			check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
-		}
+
+		if($('#' + check_box[i]).is(":visible")){
+	        if (check_box[i].checked) {
+				check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
+			}
+    	} 
+		// if (check_box[i].checked) {
+		// 	check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
+		// }
 	}
 }
 

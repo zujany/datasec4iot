@@ -51,7 +51,7 @@
         <p>To: <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
 
         <button type="button" class="btn btn-primary" onclick="date_filter()"> Add</button>
-        <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remover</button>
+        <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remove</button>
     </div>
     <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
