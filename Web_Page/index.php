@@ -86,7 +86,8 @@
                     <tr>
                     	<td class="file_date" id="<?php substr($files[$a], 8,8);?>">
                         <?php
-                            substr($files[$a], 8,8);
+                            // substr($files[$a], 8,8);
+                            substr("abcdf", 3,2);
                             // for ($i = 8; $i < 12; $i++){
                             //     echo $files[$a][$i]; 
                             // }
