@@ -9,7 +9,7 @@ function date_filter(){
         var files_dates = $('.file_date');
 
         for (var i = 0; i < files_dates.length; i++){
-			date = new Date(files_dates.id)
+			date = new Date(files_dates[i].id)
 			// console.log(files_dates[i].innerHTML)
 			console.log(date)
 			console.log(date.getDate())
