@@ -57,7 +57,7 @@
 <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
 <!-- Table -->
-        <table class="table table-striped">
+        <table id="dtVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 <!-- Table header -->
             <thead class="table_header_footer">
                 <tr>
