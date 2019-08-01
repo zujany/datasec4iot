@@ -57,11 +57,7 @@
 <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
 <!-- Table -->
-
-<div class="table-wrapper-scroll-y my-custom-scrollbar">
-
-    <table class="table table-bordered table-striped mb-0">
-        
+        <table class="table table-striped">
 <!-- Table header -->
             <thead class="table_header_footer">
                 <tr>
@@ -139,7 +135,6 @@
 
 
         </table>
-    </div>
     </div>
 </div>
 </div>
