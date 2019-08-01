@@ -44,7 +44,7 @@
 <div class="row">
 
 <!-- Filter by date -->
-    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" >
+    <div class="col-lg-5 col-md-5 col-sm-3 col-xs-2" >
        <form class="filter_date">
             <h4 id="filters_title">Filter by date</h4>
             <p>From:<br/> <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
@@ -55,7 +55,7 @@
         </form>
     </div>
 <!--  List -->
-    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+    <div class="col-lg-5 col-md-5 col-sm-3 col-xs-2">
 <!-- Table -->
         <table class="table table-striped">
 <!-- Table header -->
