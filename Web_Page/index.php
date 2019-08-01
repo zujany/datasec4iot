@@ -57,7 +57,11 @@
 <!--  List -->
     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
 <!-- Table -->
-        <table id="dtVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+    <table class="table table-bordered table-striped mb-0">
+        
 <!-- Table header -->
             <thead class="table_header_footer">
                 <tr>
@@ -135,6 +139,7 @@
 
 
         </table>
+    </div>
     </div>
 </div>
 </div>
