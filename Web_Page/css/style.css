@@ -36,10 +36,10 @@
 
 
 /*Table*/
-/*.table {
+.table {
     width: 70em;
     max-width: 75%;
-}*/
+}
 
 
 /*#table_header{
@@ -52,10 +52,10 @@
 
 /*Filter*/
 
-/*.filter_date {
+.filter_date {
     position: fixed;
     padding-left: 80px;
-}*/
+}
 
 /*.table_header_footer{
     position: fixed;
