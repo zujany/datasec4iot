@@ -44,7 +44,7 @@
 <div class="row">
 
 <!-- Filter by date -->
-    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" >
+    <div class="col-lg-4 col-md-3 col-sm-0 col-xs-0" >
        <form class="filter_date">
             <h4 id="filters_title">Filter by date</h4>
             <p>From:<br/> <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
