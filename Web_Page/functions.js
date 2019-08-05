@@ -18,15 +18,12 @@ function date_filter(){
 
     	for (var i = 0; i < files_dates.length; i++){
 
-    		console.log(to.getDate());
-    		console.log(to.getMonth()); 
-    		console.log(to.getUTCFullYear());
-    		console.log(to.getTime()); 
-
+    		console.log(from.getTime()); 
+    		
 
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
-
+			console.log(date.getTime());
 			// if(to.getTime()==date.getTime()){
 			// 	console.log("date==to");
 			// }
@@ -38,7 +35,7 @@ function date_filter(){
 			// console.log(from.getTime());
 
 			//Comparison to filtering
-			if(!((date.getTime()-1 > from.getTime()) && (date.getTime() < to.getTime()+1))){
+			if(!((date.getTime()-7200000 > from.getTime()) && (date.getTime() < to.getTime()+7200000))){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
