@@ -11,13 +11,11 @@ function date_filter(){
     var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
     var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
 
-    console.log($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
-
     //To have a valid filter interval 
 	if(from.getTime() <= to.getTime()) {
 		//Dates of all the files -string-
     	var files_dates = $('.file_date');
-    	for (var i = 0; i < files_dates.length; i++){
+    	for (var i = 0; i <= files_dates.length; i++){
 
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
