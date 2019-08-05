@@ -25,7 +25,7 @@ function date_filter(){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
-			if(date == to){
+			if(date.getTime() == to.getTime()){
 				$('#' + file_id).parent().show();
 			}
 		}
