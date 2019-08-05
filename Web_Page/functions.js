@@ -20,7 +20,10 @@ function date_filter(){
 
     		console.log(to.getDate());
     		console.log(to.getMonth()); 
-    		console.log(to.getUTCFullYear()); 
+    		console.log(to.getUTCFullYear());
+    		console.log(to.getTime()); 
+
+
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
 
