@@ -15,13 +15,13 @@ function date_filter(){
 	if(from.getTime() <= to.getTime()) {
 		//Dates of all the files -string-
     	var files_dates = $('.file_date');
-    	for (var i = 0; i <= files_dates.length; i++){
+    	for (var i = 0; i < files_dates.length; i++){
 
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
 
 			//Comparison to filtering
-			if(!((date.getTime() >= from.getTime()) && (date.getTime() <= to.getTime()))){
+			if(!((date.getTime()-1 > from.getTime()) && (date.getTime() < to.getTime()+1))){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
