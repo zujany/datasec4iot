@@ -19,7 +19,7 @@ function date_filter(){
     	for (var i = 0; i < files_dates.length; i++){
 
     		console.log(from.getTime()); 
-    		
+
 
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
@@ -35,7 +35,7 @@ function date_filter(){
 			// console.log(from.getTime());
 
 			//Comparison to filtering
-			if(!((date.getTime()-7200000 > from.getTime()) && (date.getTime() < to.getTime()+7200000))){
+			if(!((date.getTime()-7200000 >= from.getTime()) && (date.getTime() <= to.getTime()+7200000))){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
