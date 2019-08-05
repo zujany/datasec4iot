@@ -19,6 +19,12 @@ function date_filter(){
 
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
+			if(to.getTime()==date.getTime()){
+				console.log("date==to");
+			}
+			if(from.getTime() == date.getTime()){
+				console.log("date==from");
+			}
 
 			//Comparison to filtering
 			if(!((date.getTime()-1 > from.getTime()) && (date.getTime() < to.getTime()+1))){
