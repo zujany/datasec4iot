@@ -4,10 +4,11 @@ $(function()
 {
     $( "#date-filter-from" ).datepicker();
     $( "#date-filter-to" ).datepicker();
+    // Hide remove filter button as default
+	$('#remove_filter').hide();
+
 });
 
-// Hide remove filter button as default
-$('#remove_filter').hide();
 
 // Date filter 
 function date_filter(){
