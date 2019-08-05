@@ -28,7 +28,7 @@ function date_filter(){
 			// }
 
 			console.log(date.getTime());
-			console.log(from.getTime);
+			console.log(from.getTime());
 
 			//Comparison to filtering
 			if(!((date.getTime()-1 > from.getTime()) && (date.getTime() < to.getTime()+1))){
