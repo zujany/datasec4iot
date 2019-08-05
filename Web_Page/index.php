@@ -50,8 +50,8 @@
             <p>From:<br/> <input type="text" id="date-filter-from" placeholder="mm/dd/yyyy"></p>
             <p>To:<br/> <input type="text" id="date-filter-to" placeholder="mm/dd/yyyy"></p>
 
-            <button type="button" class="btn btn-primary" onclick="date_filter()"> Add</button>
-            <button type="button" class="btn btn-primary" onclick="remove_date_filter()">Remove</button>
+            <button type="button" class="btn btn-primary" id="add_filter" onclick="date_filter()"> Add</button>
+            <button type="button" class="btn btn-primary" id= "remove_filter" onclick="remove_date_filter()">Remove</button>
         </form>
     </div>
 <!--  List -->

@@ -6,6 +6,9 @@ $(function()
     $( "#date-filter-to" ).datepicker();
 });
 
+// Hide remove filter button as default
+$('#remove_filter').hide();
+
 // Date filter 
 function date_filter(){
     var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
@@ -17,29 +20,16 @@ function date_filter(){
     	var files_dates = $('.file_date');
 
     	for (var i = 0; i < files_dates.length; i++){
-
-    		console.log(from.getTime()); 
-
-
 			// Dates of the files -date-
-			date = new Date(files_dates[i].id);
-			console.log(date.getTime());
-			// if(to.getTime()==date.getTime()){
-			// 	console.log("date==to");
-			// }
-			// if(from.getTime() == date.getTime()){
-			// 	console.log("date==from");
-			// }
-
-			// console.log(date.getTime());
-			// console.log(from.getTime());
-
+			date = new Date(files_dates[i].id);		
 			//Comparison to filtering
 			if(!((date.getTime()-7200000 >= from.getTime()) && (date.getTime() <= to.getTime()+7200000))){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
 		}
+		$('#add_filter').hide();
+		$('#remove_filter').show();
 	} 
 	else {
 	    console.log("Invalid interval");
@@ -53,8 +43,9 @@ function remove_date_filter(){
 		file_id = files_dates[i].id;
 		$('#' + file_id).parent().show();
 	}
-
 	clean_all();
+	$('#add_filter').show();
+	$('#remove_filter').hide();
 }
 
 // Select all files
