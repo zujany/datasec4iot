@@ -21,14 +21,14 @@ function date_filter(){
 			date = new Date(files_dates[i].id);
 
 			//Comparison to filtering
-			if(!((date.getTime() >= (from.getTime()-0.000001)) && (date.getTime() <= (to.getTime()+0.0000001)))){
+			console.log(date.getTime());
+			if(!((date.getTime() > (from.getTime()-0.000001)) && (date.getTime() < (to.getTime()+0.0000001)))){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
-			if(date.getTime() == to.getTime()){
-				$('#' + file_id).parent().show();
-				console.log("date == to");
-			}
+			
+				
+			
 		}
 	} 
 	else {
