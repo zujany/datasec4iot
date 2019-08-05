@@ -22,7 +22,9 @@ function date_filter(){
 
 			//Comparison to filtering
 			console.log(date.getTime());
-			if(!((date.getTime() > (from.getTime()-0.000001)) && (date.getTime() < (to.getTime()+0.0000001)))){
+			console.log(date.getTime()-1);
+
+			if(!((date.getTime() > (from.getTime()-1)) && (date.getTime() < (to.getTime()+1)))){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
