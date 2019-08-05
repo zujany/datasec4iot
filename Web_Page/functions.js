@@ -17,7 +17,10 @@ function date_filter(){
     	var files_dates = $('.file_date');
 
     	for (var i = 0; i < files_dates.length; i++){
-    		console.log(files_dates[i]);
+
+    		console.log(from.getDate());
+    		console.log(from.getMonth());
+    		console.log(from.getUTCFullYear());
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
 
@@ -28,8 +31,8 @@ function date_filter(){
 			// 	console.log("date==from");
 			// }
 
-			console.log(date.getTime());
-			console.log(from.getTime());
+			// console.log(date.getTime());
+			// console.log(from.getTime());
 
 			//Comparison to filtering
 			if(!((date.getTime()-1 > from.getTime()) && (date.getTime() < to.getTime()+1))){
