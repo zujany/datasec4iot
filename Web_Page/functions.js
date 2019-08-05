@@ -10,6 +10,9 @@ $(function()
 function date_filter(){
     var from = new Date ($('#date-filter-from').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
     var to = new Date ($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
+
+    console.log($('#date-filter-to').datepicker({ dateFormat: 'dd/MM/yyyy' }).val());
+    
     //To have a valid filter interval 
 	if(from.getTime() < to.getTime()) {
 		//Dates of all the files -string-
@@ -24,10 +27,10 @@ function date_filter(){
 				file_id = files_dates[i].id;
 				$('#' + file_id).parent().hide();
 			}
-		}	
+		}
 	} 
 	else {
-	     console.log("Invalid interval");
+	    console.log("Invalid interval");
 	}
 }
 
