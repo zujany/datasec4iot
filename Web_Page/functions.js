@@ -18,9 +18,9 @@ function date_filter(){
 
     	for (var i = 0; i < files_dates.length; i++){
 
-    		console.log(from.getDate());
-    		console.log(from.getMonth());
-    		console.log(from.getUTCFullYear());
+    		console.log(to.getDate());
+    		console.log(to.getMonth()); 
+    		console.log(to.getUTCFullYear()); 
 			// Dates of the files -date-
 			date = new Date(files_dates[i].id);
 
