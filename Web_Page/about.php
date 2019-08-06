@@ -27,16 +27,17 @@
                 <a class="nav-link" href="home.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.php">About</a>
+                <a class="nav-link" href="about.php">About<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="index.php">Download <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Download</a>
               </li>
             </ul>
         </div>
     </nav>
 </nav>
         
+<img src="/home/zujany/Documents/Stage_Iot/Web_Page/statics/network_diagram.png" class="img-fluid" alt="Responsive image">
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
