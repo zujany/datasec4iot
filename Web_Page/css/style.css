@@ -37,9 +37,8 @@
 
 /*Table*/
 .table {
-    width: auto;
-    max-width: 100%;
-}
+    width: fit-content;
+}    
 
 
 /*#table_header{
