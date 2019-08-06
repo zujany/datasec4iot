@@ -38,6 +38,7 @@
 /*Table*/
 .table {
     width: fit-content;
+    max-width: 20%;
 }    
 
 
@@ -51,6 +52,10 @@
 
 /*Filter*/
 
+    max-inline-size: 100px;
+#date-filter-from #date-filter-to{
+    max-inline-size: 100px;
+}
 .filter_date {
     /*position: fixed;*/
     /*padding-left: 80px;*/
