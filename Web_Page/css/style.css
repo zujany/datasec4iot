@@ -36,10 +36,10 @@
 
 
 /*Table*/
-/*.table {
-    width: 70em;
-    max-width: 75%;
-}*/
+.table {
+    width: auto;
+    max-width: 100%;
+}
 
 
 /*#table_header{
