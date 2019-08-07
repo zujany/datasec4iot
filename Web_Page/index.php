@@ -61,8 +61,8 @@
 <!-- Table header -->
             <thead class="table_header_footer">
                 <tr>
+                    <th scope="col"></th>
                     <th scope="col">Date</th>
-                    <th scope="col">Download</th>
                     <th></th>
                 </tr>
             </thead>
@@ -79,37 +79,38 @@
                 <p>
                     <!-- Displaying date of the file !-->
                     <tr>
-                    	<td class="file_date" id="<?php
-                            for ($i = 8; $i < 12; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                            echo "-";
-                            for ($i = 12; $i < 14; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                            echo "-";
-                            for ($i = 14; $i < 16; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                        ?>" >
-                        <?php
-                            for ($i = 8; $i < 12; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                            echo "-";
-                            for ($i = 12; $i < 14; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                            echo "-";
-                            for ($i = 14; $i < 16; $i++){
-                                echo $files[$a][$i]; 
-                            }
-                        ?>
-                        </td>
                         <td> 
                             <div class="form-check">
                             <input class="form-check-input checkbox-files" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
                             </div>
+                        </td>
+                    	<td class="file_date download_links" id="<?php
+                            for ($i = 8; $i < 12; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 12; $i < 14; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                            echo "-";
+                            for ($i = 14; $i < 16; $i++){
+                                echo $files[$a][$i]; 
+                            }
+                        ?>" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>" 
+                        >
+                            <?php
+                                for ($i = 8; $i < 12; $i++){
+                                    echo $files[$a][$i]; 
+                                }
+                                echo "-";
+                                for ($i = 12; $i < 14; $i++){
+                                    echo $files[$a][$i]; 
+                                }
+                                echo "-";
+                                for ($i = 14; $i < 16; $i++){
+                                    echo $files[$a][$i]; 
+                                }
+                            ?>
                         </td>
 
     			         <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a></td> 
