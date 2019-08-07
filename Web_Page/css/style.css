@@ -41,6 +41,10 @@ table {
     max-width: 20%;
 }    
 
+.table {
+    width: 20%;
+}
+
 
 /*#table_header{
 	position: fixed;
@@ -54,7 +58,7 @@ table {
 /*To avoid overlaping between filters and the table*/
 
 input{
-    max-inline-size: 140px;
+    max-inline-size: 100px;
 }
 
 td#checks {
