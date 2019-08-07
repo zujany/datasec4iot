@@ -36,7 +36,7 @@
 
 
 /*Table*/
-.table {
+.table .table-striped{
     width: fit-content;
     max-width: 20%;
 }    
@@ -51,10 +51,9 @@
 }
 
 /*Filter*/
-
-    max-inline-size: 100px;
-#date-filter-from #date-filter-to{
-    max-inline-size: 100px;
+/*To avoid overlaping between filters and table*/
+.input{
+    max-inline-size: 120px;
 }
 .filter_date {
     /*position: fixed;*/
