@@ -37,7 +37,7 @@
     </nav>
 </nav>
         
-<img src="statics/network_diagram.png" alt="Network diagram">
+<img src="statics/network_diagram.png" alt="Network diagram" class="img-fluid">
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
