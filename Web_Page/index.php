@@ -84,7 +84,7 @@
                             <input class="form-check-input checkbox-files" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
                             </div>
                         </td>
-                    	<td class="file_date download_links" id="<?php
+                    	<td class="file_date" id="<?php
                             for ($i = 8; $i < 12; $i++){
                                 echo $files[$a][$i]; 
                             }
