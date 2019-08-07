@@ -117,7 +117,7 @@
                         </td>
                         <td>
                             <?php
-                            echo filesize("packets_20190804_000001.pcap") . ' bytes';
+                            echo filesize("data/" + $files[$a]) . ' bytes';
                             ?>
                         </td>
 
