@@ -38,11 +38,11 @@
 /*Table*/
 table {
     width: fit-content;
-    max-width: 20%;
+    /*max-width: 20%;*/
 }    
 
 .table {
-    width: 20%;
+    width: fit-content;
 }
 
 
