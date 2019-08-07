@@ -117,7 +117,7 @@
                         </td>
                         <td>
                             <?php
-                            echo $files[$a] . ': ' . filesize($files[$a]) . ' bytes';
+                            echo filesize($files[$a]) . ' bytes';
                             ?>
                         </td>
 
