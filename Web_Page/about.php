@@ -26,10 +26,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="home.php">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="about.php">About<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.php">Download</a>
               </li>
             </ul>
@@ -37,7 +37,7 @@
     </nav>
 </nav>
         
-<img src="/home/zujany/Documents/Stage_Iot/Web_Page/statics/network_diagram.png" alt="Trulli" width="500" height="333">
+<img src="/var/www/html/datasec4iot/Web_Page/statics/network_diagram.png" alt="Trulli" width="500" height="333">
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
