@@ -117,7 +117,12 @@
                         </td>
                         <td>
                             <?php
-                            echo filesize("data/".$files[$a]) . ' bytes';
+                                $filesize = filesize("data/".$files[$a]); // bytes
+                                $filesize = round($filesize / 1048576, 2); // kilobytes with two digits
+                                 
+                                echo "The size of your file is $filesize MB.";
+
+                                // echo filesize("data/".$files[$a]) . ' bytes';
                             ?>
                         </td>
 
