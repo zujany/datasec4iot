@@ -36,7 +36,7 @@
 
 
 /*Table*/
-.table .table-striped{
+table {
     width: fit-content;
     max-width: 20%;
 }    
@@ -52,9 +52,11 @@
 
 /*Filter*/
 /*To avoid overlaping between filters and the table*/
-.input{
-    max-inline-size: 120px;
+
+input{
+    max-inline-size: 140px;
 }
+
 td#checks {
   width: fit-content;
 }
