@@ -125,14 +125,16 @@
 <!-- Table footer -->
             <tfoot class="table_header_footer">
                 <tr>
-                    <td><button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
-                    </td>
-                     <td> 
+                    <td> 
                         <div class="form-check">
                         <input class="form-check-input" id= "select_all" type="checkbox" onclick="select_all()">
                         <label class="form-check-label" for="inlineCheckbox1" ">Select All</label>
                         </div>
                     </td> 
+                    <td>
+                        <button type="button" class="btn btn-primary" onclick="download_all_selected()">download</button>
+                    </td>
+                     
                 </tr>
             </tfoot>
 

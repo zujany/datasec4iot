@@ -55,6 +55,9 @@
 .input{
     max-inline-size: 120px;
 }
+td#checks {
+  width: fit-content;
+}
 .filter_date {
     /*position: fixed;*/
     /*padding-left: 80px;*/
