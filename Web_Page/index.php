@@ -139,6 +139,7 @@
                     <td>
                         <button type="button" class="btn btn-primary" onclick="download_all_selected()">Download</button>
                     </td>
+                    <td></td>
                      
                 </tr>
             </tfoot>
