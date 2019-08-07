@@ -31,6 +31,7 @@ sudo rm /home/pi/Documents/data/*
 
 #Read files .pcap
 sudo tcpdump -ttttnnr file1.pcap 
+tcpdump -qns 0 -X -r 
 
 
 

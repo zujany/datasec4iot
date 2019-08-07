@@ -82,9 +82,9 @@ function download_all_selected(){
 }
 
 // Hide individual donwload  links
-$(document).ready(function () {
-	$('.download_links').hide();
-});
+// $(document).ready(function () {
+// 	$('.download_links').hide();
+// });
 
 // Clean all: input forms and checkboxs
 function clean_all(){
