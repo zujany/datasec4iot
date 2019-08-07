@@ -51,8 +51,8 @@
 }
 
 /*Filter*/
-/*To avoid overlaping between filters and table*/
-.input{
+/*To avoid overlaping between filters and the table*/
+#date-filter-from #date-filter-to{
     max-inline-size: 120px;
 }
 .filter_date {
