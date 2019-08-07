@@ -37,7 +37,7 @@
     </nav>
 </nav>
         
-<img src="/home/zujany/Documents/Stage_Iot/Web_Page/statics/network_diagram.png"  >
+<img src="/home/zujany/Documents/Stage_Iot/Web_Page/statics/network_diagram.png" alt="Trulli" width="500" height="333">
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
