@@ -64,7 +64,6 @@
                     <th scope="col"></th>
                     <th scope="col">Date</th>
                     <th scope="col">Size</th>
-                   <!--  <th></th> -->
                 </tr>
             </thead>
 <!-- Table body -->
@@ -119,14 +118,9 @@
                             <?php
                                 $filesize = filesize("data/".$files[$a]); // bytes
                                 $filesize = round($filesize / 1048576, 2); // kilobytes with two digits
-                                 
-                                echo "The size of your file is $filesize MB.";
-
-                                // echo filesize("data/".$files[$a]) . ' bytes';
+                                echo "$filesize MB";
                             ?>
                         </td>
-
-    			        <!--  <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a></td>  -->
                     </tr>
                 </p>
                 <?php
