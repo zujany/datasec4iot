@@ -96,21 +96,23 @@
                             for ($i = 14; $i < 16; $i++){
                                 echo $files[$a][$i]; 
                             }
-                        ?>" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>" 
+                        ?>"  
                         >
-                            <?php
-                                for ($i = 8; $i < 12; $i++){
-                                    echo $files[$a][$i]; 
-                                }
-                                echo "-";
-                                for ($i = 12; $i < 14; $i++){
-                                    echo $files[$a][$i]; 
-                                }
-                                echo "-";
-                                for ($i = 14; $i < 16; $i++){
-                                    echo $files[$a][$i]; 
-                                }
-                            ?>
+                            <a href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>">
+                                <?php
+                                    for ($i = 8; $i < 12; $i++){
+                                        echo $files[$a][$i]; 
+                                    }
+                                    echo "-";
+                                    for ($i = 12; $i < 14; $i++){
+                                        echo $files[$a][$i]; 
+                                    }
+                                    echo "-";
+                                    for ($i = 14; $i < 16; $i++){
+                                        echo $files[$a][$i]; 
+                                    }
+                                ?>
+                            </a>
                         </td>
 
     			         <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a></td> 
