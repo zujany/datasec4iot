@@ -63,7 +63,8 @@
                 <tr>
                     <th scope="col"></th>
                     <th scope="col">Date</th>
-                    <th></th>
+                    <th scope="col">Size</th>
+                   <!--  <th></th> -->
                 </tr>
             </thead>
 <!-- Table body -->
@@ -79,7 +80,7 @@
                 <p>
                     <!-- Displaying date of the file !-->
                     <tr>
-                        <td> 
+                        <td id="checks"> 
                             <div class="form-check">
                             <input class="form-check-input checkbox-files" type="checkbox" value="<?php echo $files[$a];?>" name="selected_files[]">
                             </div>
@@ -114,8 +115,13 @@
                                 ?>
                             </a>
                         </td>
+                        <td>
+                            <?php
+                            echo $files[$a] . ': ' . filesize($files[$a]) . ' bytes';
+                            ?>
+                        </td>
 
-    			         <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a></td> 
+    			        <!--  <td> <a class = "download_links" href="data/<?php echo $files[$a]; ?>" download="<?php echo $files[$a]; ?>"></a></td>  -->
                     </tr>
                 </p>
                 <?php

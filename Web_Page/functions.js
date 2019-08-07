@@ -76,7 +76,7 @@ function download_all_selected(){
 	var check_box = $('.checkbox-files');
 	for (var i = 0; i < check_box.length; i++){
 		if (check_box[i].checked) {
-			check_box[i].parentElement.parentElement.parentElement.children[2].children[0].click()
+			check_box[i].parentElement.parentElement.parentElement.children[1].children[0].click()
 		}
 	}
 }
