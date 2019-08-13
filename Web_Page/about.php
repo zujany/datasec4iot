@@ -41,7 +41,7 @@
 <div class="container" id="content">
   <div class="row" >
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
-      <p class="font-weight-bold" class="text-justify"> Datasec4iot </p> <p> is a network created to capture and study the packages sent by IoT devices. It is deployed in the coffee room of the Network’s department in Télécom SudParis, Evry, France.</p>
+      <p class="text-justify"> Datasec4iot is a network created to capture and study the packages sent by IoT devices. It is deployed in the coffee room of the Network’s department in Télécom SudParis, Evry, France.</p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" >
       <p class="text-justify">It is composed of fourteen IoT devices, a Raspberry pi 3, an access point, and a server. The devices include a mobile phone and a Google Home, that allows a variety of interactions with the system, from single interactions, to schedule actions, use voice commands, and trigger actions based on sensors measures.</p>
