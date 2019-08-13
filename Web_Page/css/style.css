@@ -5,7 +5,7 @@
 .navbar {
     background-color: #1f5cb7;
     margin-bottom: 30px;
-    position: fixed;
+/*    position: fixed;*/
     width: 100%
 
 }
@@ -27,7 +27,7 @@
 #content
 {
     position:absolute;
-    top: 56px;
+    top: 100px;
     left:0px;
     right:0px;
     bottom:0px;       
@@ -76,4 +76,6 @@ td#checks {
 /*Network diagram*/
 img {
     margin-top: 75px;
+    margin-right: auto;
+    margin-left: auto;
 }
