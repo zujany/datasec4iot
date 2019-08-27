@@ -22,9 +22,9 @@
         <a class="navbar-brand" href="about.php">Datasec4Iot</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
+             <!--  <li class="nav-item">
                 <a class="nav-link" href="home.php">Home</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="about.php">About</a>
               </li>

@@ -20,7 +20,7 @@
 <!-- Page Header -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <nav class="container">
-        <a class="navbar-brand" href="home.php">Datasec4Iot</a>
+        <a class="navbar-brand" href="about.php">Datasec4Iot</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <!-- <li class="nav-item">
