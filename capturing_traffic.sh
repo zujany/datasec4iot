@@ -23,7 +23,7 @@ do
 done
 
 #Transfering the data to the server
-sudo rsync -avz -e 'ssh' /home/pi/Documents/data/ datasec4iot@157.159.68.44:/var/www/html/datasec4iot/Web_Page/data
+sudo rsync -avz -e 'ssh' /home/pi/Documents/data/ datasec4iot@<server-ip>:/var/www/html/datasec4iot/Web_Page/data
 #Remove all files after send them to the server
 sudo rm /home/pi/Documents/data/*
 
